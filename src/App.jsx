@@ -1,5 +1,15 @@
-import React from "react";
-
-export default function App() {
-  return <div className="text-white bg-amber-300 ">App</div>;
+import React from 'react'
+ 
+const App = () => {
+  return (
+    <main className='relative'>
+Nav
+<section className=''>
+  Hero
+</section>
+    </main>
+  )
 }
+
+export default App
+

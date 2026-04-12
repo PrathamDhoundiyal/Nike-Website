@@ -1,27 +1,26 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
 @import "tailwindcss";
 
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 }
-
 @layer components {
   .max-container {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: red;
   }
-
   .input {
     @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
   }
 }
+
 
 @layer utilities {
   .padding {
@@ -58,15 +57,6 @@
 }
 
 
-
-@utility bg-hero {
-  background-image: url('/assets/images/collection-background.svg');
-}
-
-@utility bg-card {
-  background-image: url('/assets/images/thumbnail-background.svg');
-}
-
 @theme {
   /* FONT SIZES */
   --text-xs: 12px;
@@ -101,11 +91,11 @@
   --font-montserrat: "Montserrat", sans-serif;
 
   /* COLORS */
-  --color-primary: #ECEEFF;
-  --color-coral-red: #FF6452;
-  --color-slate-gray: #6D6D6D;
-  --color-pale-blue: #F5F6FF;
-  --color-white-400: rgba(255, 255, 255, 0.80);
+  --color-primary: #eceeff;
+  --color-coral-red: #ff6452;
+  --color-slate-gray: #6d6d6d;
+  --color-pale-blue: #f5f6ff;
+  --color-white-400: rgba(255, 255, 255, 0.8);
 
   /* SHADOW */
   --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -113,5 +103,4 @@
   /* BREAKPOINT */
   --breakpoint-wide: 1440px;
 
-  
 }
